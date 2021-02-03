@@ -1,0 +1,43 @@
+Get the feeling you all either gave up of forgot to push the most recent version, there
+are a lot of issues with the project.
+
+1. There are a lot of commented out sections.
+
+2. You should filter out your own id from the list of potential payment
+recepients:
+
+==================================
+Please log in
+Username: user
+Password: password
+
+1) View your current balance
+2) Send TE bucks
+3) View your past transfers
+4) Request TE bucks
+5) View your pending requests
+6) Login as different user
+7) Exit
+
+Please choose an option >>> 2
+
+-------------------------------------------
+Users
+ID		 Name
+-------------------------------------------
+1		user
+2		admin
+---------
+
+Enter ID of user you are sending to (0 to cancel): 
+1
+Enter amount: 
+100
+
+==================================
+
+3. Not able to send a payment, get a 404 error.
+There doesn't seem to be on the server side an endpoint like: /new-transfer/2
+
+4.Same issue when attempting to view past transfers.
+There doesn't seem to be on the server side an endpoint for: /users/transfers
